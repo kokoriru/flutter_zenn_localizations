@@ -8,9 +8,7 @@ class L10nJa extends L10n {
   L10nJa([String locale = 'ja']) : super(locale);
 
   @override
-  String hello(Object name) {
-    return 'ようこそ $name';
-  }
+  String get hello => 'ようこそ {name}';
 
   @override
   String get login => 'ログイン';
@@ -22,5 +20,5 @@ class L10nJa extends L10n {
   String get allow => '許可';
 
   @override
-  String get deny => 'DENY!';
+  String get deny => '拒否';
 }

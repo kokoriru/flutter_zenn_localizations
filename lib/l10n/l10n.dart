@@ -94,11 +94,11 @@ abstract class L10n {
     Locale('ja')
   ];
 
-  /// welcome message
+  /// No description provided for @hello.
   ///
   /// In en, this message translates to:
   /// **'Hello {name}'**
-  String hello(Object name);
+  String get hello;
 
   /// No description provided for @login.
   ///

@@ -8,9 +8,7 @@ class L10nEn extends L10n {
   L10nEn([String locale = 'en']) : super(locale);
 
   @override
-  String hello(Object name) {
-    return 'Hello $name';
-  }
+  String get hello => 'Hello {name}';
 
   @override
   String get login => 'Login';
