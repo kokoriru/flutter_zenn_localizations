@@ -90,8 +90,8 @@ abstract class L10n {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
-    Locale('en'),
-    Locale('ja')
+    Locale('ja'),
+    Locale('en')
   ];
 
   /// No description provided for @hello.

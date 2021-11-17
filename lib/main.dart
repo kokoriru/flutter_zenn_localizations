@@ -13,10 +13,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       localizationsDelegates: L10n.localizationsDelegates,
-      supportedLocales: [
-        const Locale('jp', ''), //日本語
-        const Locale('en', ''), //英語
-      ],
+      supportedLocales: L10n.supportedLocales,
+      localeResolutionCallback: (locale, supportedLocales) {
+        if (locale != null) {
+          final _locale = Locale(locale.languageCode);
+          if (supportedLocales.contains(_locale)) {
+            return _locale;
+          }
+        }
+        return supportedLocales.first;
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
