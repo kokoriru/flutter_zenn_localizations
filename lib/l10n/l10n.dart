@@ -96,32 +96,32 @@ abstract class L10n {
 
   /// No description provided for @hello.
   ///
-  /// In en, this message translates to:
-  /// **'Hello {name}'**
+  /// In ja, this message translates to:
+  /// **'ようこそ {name}'**
   String get hello;
 
   /// No description provided for @login.
   ///
-  /// In en, this message translates to:
-  /// **'Login'**
+  /// In ja, this message translates to:
+  /// **'ログイン'**
   String get login;
 
   /// No description provided for @info.
   ///
-  /// In en, this message translates to:
-  /// **'Info'**
+  /// In ja, this message translates to:
+  /// **'情報'**
   String get info;
 
   /// No description provided for @allow.
   ///
-  /// In en, this message translates to:
-  /// **'ALLOW!'**
+  /// In ja, this message translates to:
+  /// **'許可'**
   String get allow;
 
   /// No description provided for @deny.
   ///
-  /// In en, this message translates to:
-  /// **'DENY!'**
+  /// In ja, this message translates to:
+  /// **'拒否'**
   String get deny;
 }
 
